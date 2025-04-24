@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizza Order Form</title>
+  <style>
+    h2 {
+      text-align: center;
+      font-weight: bold;
+    }
+    form {
+      width: 900px;
+      margin: auto;
+      background-color: rgb(245, 244, 244);
+      padding: 10px;
+    }
+    fieldset {
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: inline-block;
+      width: 120px;
+      margin-top: 10px;
+    }
+    input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+      /* width: 200px; */
+      height: 10px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+   
+  </style>
+</head>
+<body>
+  <form>
+    <fieldset>
+        <legend style="text-align: center;">PIZZA ORDER FORM</legend>
+    <fieldset>
+      <legend>Delivery Address</legend>
+      <label>Full Name:</label><input type="text" name="fullname" placeholder="Full Name">
+      <label>Street Address:</label><input type="text" name="address" placeholder="Address"><br><br>
+      <label>Phone:</label><input type="text" name="phone" placeholder="Phone">
+      <label>Email:</label><input type="email" name="email" placeholder="Email"><br><br>
+      <label>Password:</label><input type="password" name="password" placeholder="Password">
+    </fieldset>
+
+    <fieldset>
+      <legend>Payment Information</legend>
+      <label>Card Type:</label>
+      <select name="cardtype">
+        <option value="visa">Visa</option>
+        <option value="mastercard">MasterCard</option>
+        <option value="discover">Discover</option>
+      </select>
+      <label>Card Number:</label><input type="text" name="cardnumber" placeholder="Card Number"><br>
+      <label>Name on Card:</label><input type="text" name="cardname" placeholder="Name">
+    </fieldset>
+
+    <fieldset>
+      <legend>Customize Your Pizza</legend>
+      <label>Pizza size:</label>
+      <select name="size">
+        <option value="large" selected>large</option>
+        <option value="medium">medium</option>
+        <option value="small">small</option>
+      </select>
+      <label>Quantity:</label><input type="number" name="quantity"><br>
+
+      <label>Spices:</label>
+        <input type="checkbox" name="spices" value="black pepper"> Black pepper
+        <input type="checkbox" name="spices" value="bell peppers"> Bell peppers
+        <input type="checkbox" name="spices" value="mayonnaise"> Mayonnaise <br>
+      <br>
+
+      <label>Other Requirements:</label>
+      <textarea>Any Other Requirements</textarea>
+
+      <label>Meat</label>
+        Fish <input type="radio" name="meat" value="fish">
+       Cow <input type="radio" name="meat" value="cow">
+       Chicken <input type="radio" name="meat" value="chicken">
+    </fieldset>
+
+    <input type="reset" value="Clear Order">
+    <input type="submit" value="Place Order">
+</fieldset>
+  </form>
+</body>
+</html>
